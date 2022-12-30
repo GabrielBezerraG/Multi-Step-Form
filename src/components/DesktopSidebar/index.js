@@ -3,7 +3,7 @@ import { StyledDesktopSidebar } from "./styles";
 
 export default function DesktopSidebar({store}) {
    return (
-      <StyledDesktopSidebar src="/images/bg-sidebar-desktop.svg">
+      <StyledDesktopSidebar>
          <StepButtons store={store} />
       </StyledDesktopSidebar>
    )
