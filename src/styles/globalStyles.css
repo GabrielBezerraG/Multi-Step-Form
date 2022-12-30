@@ -1,0 +1,67 @@
+:root {
+   --navy: #02295a;
+   --blue: #473dff;
+   --pastel-blue: #adbeff;
+   --light-blue: #bfe2fd;
+   --red: #ed3548;
+
+   --grey: #9699ab;
+   --light-grey: #d6d9e6;
+   --magnolia: #f0f6ff;
+   --alabaster: #fafbff;
+   --white: #ffffff;
+
+   --blue-border : #3831b4;
+   --navy-hover: #165199;
+   --blue-hover: #8a84ff;
+}
+
+html {
+   font-family: 'Ubuntu', sans-serif;
+}
+
+.main-container {
+   margin: 0 auto;
+   max-width: 1440px;
+   background-color: var(--magnolia);
+   min-height: 595px;
+   position: relative;
+   padding-bottom: 1.5rem;
+   box-sizing: border-box;
+}
+
+.title {
+   font-size: 1.5rem;
+   font-weight: 700;
+   color: var(--navy);
+   margin-bottom: 0.75rem;
+   letter-spacing: -0.25px;
+}
+
+.subtitle {
+   color: var(--grey);
+   margin-bottom: 1.35rem;
+   line-height: 1.5rem;
+   font-size: 1.035rem;
+   letter-spacing: -0.2px;
+}
+
+@media screen and (min-width: 1080px) {
+
+   .main-container {
+      min-height: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .title {
+      font-size: 2.03rem;
+   }
+
+   .subtitle {
+      letter-spacing: -0.25px;
+      margin-bottom: 2.4rem;
+   }
+}
