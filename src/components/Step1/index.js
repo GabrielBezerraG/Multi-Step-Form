@@ -40,7 +40,7 @@ export default function Step1({ store }) {
                {store.emailInput.error && <span className="required">This field is required</span>}
                <input
                   className={store.emailInput.error ? "input input--required" : "input"}
-                  type="text"
+                  type="email"
                   data-setter="setEmailInput"
                   placeholder="e.g. stephenking@lorem.com"
                   onChange={(e) => handleChange(e)}
@@ -52,7 +52,7 @@ export default function Step1({ store }) {
                {store.phoneInput.error && <span className="required">This field is required</span>}
                <input
                   className={store.phoneInput.error ? "input input--required" : "input"}
-                  type="text"
+                  type="tel"
                   data-setter="setPhoneInput"
                   placeholder="e.g. +1 234 567 890"
                   onChange={(e) => handleChange(e)}
